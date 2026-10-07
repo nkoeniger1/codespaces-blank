@@ -33,18 +33,20 @@
             <h2>Pre-Order &amp; Inquiry Form</h2>
             <p>Please fill out this form to submit a bakery pre-order or reach out with a question. Fields marked with an asterisk are required.</p>
         
-            <form action="#" method="post">
+            <form id="bakery-order-form" action="#" method="post">
                 <fieldset>
                     <legend>Your Request Details</legend>
                     
                     <p>
                         <label id="lbl-name" for="cust-name">Full Name *:</label>
                         <input type="text" id="cust-name" name="customer_name" required aria-labelledby="lbl-name">
+                        <span id="name-error" class="form-error-msg" style="color: #d9534f; display: block; font-size: 0.9em; margin-top: 4px; font-weight: bold;"></span>
                     </p>
 
                     <p>
                         <label id="lbl-email" for="cust-email">Email Address *:</label>
                         <input type="email" id="cust-email" name="customer_email" required aria-labelledby="lbl-email">
+                        <span id="email-error" class="form-error-msg" style="color: #d9534f; display: block; font-size: 0.9em; margin-top: 4px; font-weight: bold;"></span>
                     </p>
 
                     <p>
@@ -89,6 +91,8 @@
             <li><a href="contact.html">Contact &amp; Pre-Orders</a></li>
         </ul>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
